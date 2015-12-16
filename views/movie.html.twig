@@ -1,0 +1,6 @@
+{% extends "layout.html.twig" %} {% block title %}{{ movie.title }}{% endblock %} {% block content %}
+<p>
+    <h2>{{ movie.title }}</h2>
+    <p>{{ movie.description.short }}</p>
+</p>
+{% endblock %}

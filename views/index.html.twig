@@ -1,0 +1,6 @@
+{% extends "layout.html.twig" %} {% block title %}Home{% endblock %} {% block content %} {% for category in categorys %}
+<article>
+    <h2><a class="movTitle" href="{{ path('movie', { 'id': movie.id }) }}">{{ movie.title }}</a></h2>
+    <p>{{ movie.description_short }}</p>
+</article>
+{% endfor %} {% endblock %}
